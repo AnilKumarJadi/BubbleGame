@@ -95,7 +95,7 @@ body {
         margin-bottom: 0;
     }
     #ptop {
-        padding: 0 5px;
+        padding: 0 10px;
         width: 100%;
         height: 100px;
         background-color: green;
@@ -105,8 +105,6 @@ body {
         justify-content: space-between;
     }
     #ptop .elen h2{
-        font-size: 200;
-    }
     
     #panel {
         width: 80%;
@@ -117,8 +115,7 @@ body {
     
     }
     .elen {
-       
-        gap: 10px;
+        gap: 5px;
     
     }
     #pbtm h1{
@@ -150,4 +147,13 @@ body {
         padding: 5px;
         /* background-color: black;  */
     }
+    .box {
+        padding: 5px 15px;
+        background-color: white;
+        color: black;
+        font-weight: 700;
+        font-size: 15px;
+        border-radius: 5px;
+    }
+}
 }
