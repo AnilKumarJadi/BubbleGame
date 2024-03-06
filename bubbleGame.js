@@ -32,12 +32,12 @@ function runTimer() {
       timer--;
       document.querySelector("#time").innerText = timer;
     } 
-    else {
-      clearInterval(timerInt);
-      document.querySelector(
-        "#pbtm"
-      ).innerHTML = `<h1>Game Over.............!<h1>`;
-    }
+    // else {
+    //   clearInterval(timerInt);
+    //   document.querySelector(
+    //     "#pbtm"
+    //   ).innerHTML = `<h1>Game Over.............!<h1>`;
+    // }
   }, 1000);
 }
 document.querySelector("#pbtm").addEventListener("click", function (dtls) {
@@ -53,5 +53,5 @@ document.querySelector("#pbtm").addEventListener("click", function (dtls) {
 });
 
 makeBubble();
-// runTimer();
+runTimer();
 getNewhit();
