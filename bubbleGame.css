@@ -105,6 +105,9 @@ body {
         justify-content: space-between;
     }
     #ptop .elen h2{
+
+        font-size: 20px;
+    }
     
     #panel {
         width: 80%;
@@ -155,5 +158,4 @@ body {
         font-size: 15px;
         border-radius: 5px;
     }
-}
 }
