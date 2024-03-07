@@ -1,4 +1,4 @@
-var timer = 30;
+var timer = 60;
 var score = 0;
 var hitrn = 0;
 
@@ -16,7 +16,7 @@ function getNewhit() {
 
 function makeBubble() {
   var culter = "";
-  for (let i = 0; i <= 206; i++) {
+  for (let i = 0; i <= 215; i++) {
     var rn = Math.floor(Math.random() * 30);
     culter += `<div class="bubble">${rn}</div>`;
   }
@@ -31,12 +31,13 @@ function runTimer() {
     if (timer > 0) {
       timer--;
       document.querySelector("#time").innerText = timer;
-    } 
-    else {
+    } else {
       clearInterval(timerInt);
       document.querySelector(
         "#pbtm"
       ).innerHTML = `<h1>Game Over.............!<h1>`;
+      var myAudio = document.getElementById("AudioSong");
+      myAudio.pause();
     }
   }, 1000);
 }
